@@ -1,16 +1,22 @@
 * {
     box-sizing: border-box;
 }
+
 body,
 html {
     font-size: 10px;
     font-family: Open Sans;
-    color: #ffffff;
+    color: #000;
 }
+
 * ul li {
-    font-size: 1.4rem;
     color: black;
     list-style: none;
+}
+
+* p {
+    color: black;
+    font-size: 1.6rem;
 }
 
 /*--------------------------------------------------------------
@@ -47,6 +53,7 @@ header {
             margin-top: 1rem;
             font-size: 2.5rem;
             font-weight: 700;
+            color: #ffffff;
         }
 
         .socials-link {
@@ -63,10 +70,10 @@ header {
                 width: 3.5rem;
                 margin: 0.4rem;
                 background-color: #2C2F3F;
-            }
 
-            a:hover {
-                background-color: #149DDD;
+                &:hover {
+                    background-color: #149DDD;
+                }
             }
         }
 
@@ -84,6 +91,7 @@ header {
     padding-top: 5rem;
     font-size: 1.4rem;
     color: #000;
+    margin-bottom: 2.5rem;
 
     h2 {
         position: relative;
@@ -111,10 +119,6 @@ header {
 }
 
 /*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
 header .nav {
@@ -130,7 +134,7 @@ header .nav {
         margin-top: 1.4rem;
 
         a {
-            font-size: 1.4rem;
+            font-size: 1.5rem;
             display: flex;
             color: #a8a9b4;
 
@@ -174,6 +178,7 @@ header .nav {
     height: 100vh;
     background:url("../img/background-homemain.jpg") top center;
     background-size: cover;
+    margin-bottom: 1.5rem;
 
     #home-content {
         z-index: 2;
@@ -191,6 +196,7 @@ header .nav {
             padding-top: 1rem;
             font-size: 2.6rem;
             font-weight: 500;
+            color: #ffffff;
 
             span {
                 border-bottom: #149DDD solid;
@@ -199,6 +205,197 @@ header .nav {
     }
 }
 
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+#about {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    .row {
+        margin-top: 2rem;
+    }
+
+    .row .about-content {
+        h3 {
+            font-size: 2.6rem;
+            font-weight: 800;
+            color: #173b6c;
+        }
+    }
+
+    ;
+
+    .about-content .row {
+        ul {
+            padding: 0;
+            height: 100%;
+        }
+
+        li {
+            padding: 0.7rem;
+            font-size: 1.6rem;
+            display: flex;
+            text-align: center;
+
+            i {
+                color: #149DDD;
+                font-size: 2.5rem;
+                top: 50%;
+            }
+        }
+    }
+}
+
+/*--------------------------------------------------------------
+# Facts
+--------------------------------------------------------------*/
+#facts {
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+
+    .facts-content {
+        .count-box {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+
+            i {
+                font-size: 5rem;
+                color: #149DDD;
+                float: left;
+                display: block;
+                line-height: 1.5;
+            }
+
+            span {
+                display: block;
+                font-size: 5rem;
+                color: #000;
+                font-weight: 700;
+                margin-left: 6rem;
+            }
+
+            p {
+                font-size: 1.4rem;
+                margin: 0 0 0 6rem;
+                color: #122f57;
+            }
+        }
+    }
+}
+
+/*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
+#skills {
+    background-color: #f5f8fd;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    padding-bottom: 5rem;
+
+    .skill-contents {
+        margin-top: 1rem;
+
+        .progress-skill {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+
+            div {
+                font-size: 1.2rem;
+                font-weight: 700;
+                color: #050d18;
+
+                .val {
+                    float: right;
+                }
+            }
+
+            .progress {
+                margin-top: 1rem;
+                background-color: #dce8f8;
+                border-radius: 0.1rem;
+
+                .progress-bar {
+                    background-color: #149DDD;
+                }
+            }
+        }
+    }
+}
+
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+#resume {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+
+    .resume-title {
+        font-size: 2.6rem;
+        font-weight: 800;
+        color: #050d18;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .resume-item {
+        border-left: #1f5297 solid .2rem;
+        padding-left: 2rem;
+        padding-bottom: 0.1rem;
+        font-size: 1.6rem;
+
+        h4 {
+            padding-bottom: 1rem;
+            font-size: 1.8rem;
+            font-weight: 650;
+        }
+
+        p em {
+            font-style: italic;
+            color: #272829;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+        }
+
+        ul {
+            margin: 1em 0 1em 0;
+            padding-left: 2rem;
+            ;
+
+            li {
+                list-style-type: disc;
+                margin: 1rem 0 1rem 0;
+            }
+        }
+
+        h5 {
+            background-color: #e4edf9;
+            padding: .5rem 1.5rem;
+            display: inline-block;
+            font-weight: 650;
+        }
+
+        &:before {
+            content: "";
+            width: 1.6rem;
+            height: 1.6rem;
+            border-radius: 50%;
+            border: #1f5297 solid .2rem;
+            background-color: #FFFFFF;
+            left: 0.75rem;
+            position: absolute;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+            
+        }
+    }
+}
 
 /*--------------------------------------------------------------
 # Footer

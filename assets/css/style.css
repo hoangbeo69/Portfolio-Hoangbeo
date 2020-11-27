@@ -6,13 +6,17 @@ body,
 html {
   font-size: 10px;
   font-family: Open Sans;
-  color: #ffffff;
+  color: #000;
 }
 
 * ul li {
-  font-size: 1.4rem;
   color: black;
   list-style: none;
+}
+
+* p {
+  color: black;
+  font-size: 1.6rem;
 }
 
 /*--------------------------------------------------------------
@@ -46,6 +50,7 @@ header .profile h2 {
   margin-top: 1rem;
   font-size: 2.5rem;
   font-weight: 700;
+  color: #ffffff;
 }
 header .profile .socials-link {
   margin-top: 2rem;
@@ -77,6 +82,7 @@ header .profile .socials-link a:hover {
   padding-top: 5rem;
   font-size: 1.4rem;
   color: #000;
+  margin-bottom: 2.5rem;
 }
 .section-title h2 {
   position: relative;
@@ -101,9 +107,6 @@ header .profile .socials-link a:hover {
 }
 
 /*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
 header .nav {
@@ -118,7 +121,7 @@ header .nav li {
   margin-top: 1.4rem;
 }
 header .nav li a {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   display: flex;
   color: #a8a9b4;
 }
@@ -143,6 +146,7 @@ header .nav li:hover a i {
   height: 100vh;
   background: url("../img/background-homemain.jpg") top center;
   background-size: cover;
+  margin-bottom: 1.5rem;
 }
 #home-section:before {
   content: "";
@@ -170,9 +174,167 @@ header .nav li:hover a i {
   padding-top: 1rem;
   font-size: 2.6rem;
   font-weight: 500;
+  color: #ffffff;
 }
 #home-section #home-content p span {
   border-bottom: #149DDD solid;
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+#about {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+#about .row {
+  margin-top: 2rem;
+}
+#about .row .about-content h3 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #173b6c;
+}
+#about .about-content .row ul {
+  padding: 0;
+  height: 100%;
+}
+#about .about-content .row li {
+  padding: 0.7rem;
+  font-size: 1.6rem;
+  display: flex;
+  text-align: center;
+}
+#about .about-content .row li i {
+  color: #149DDD;
+  font-size: 2.5rem;
+  top: 50%;
+}
+
+/*--------------------------------------------------------------
+# Facts
+--------------------------------------------------------------*/
+#facts {
+  margin-top: 1.5rem;
+  margin-bottom: 5rem;
+}
+#facts .facts-content .count-box {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+#facts .facts-content .count-box i {
+  font-size: 5rem;
+  color: #149DDD;
+  float: left;
+  display: block;
+  line-height: 1.5;
+}
+#facts .facts-content .count-box span {
+  display: block;
+  font-size: 5rem;
+  color: #000;
+  font-weight: 700;
+  margin-left: 6rem;
+}
+#facts .facts-content .count-box p {
+  font-size: 1.4rem;
+  margin: 0 0 0 6rem;
+  color: #122f57;
+}
+
+/*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
+#skills {
+  background-color: #f5f8fd;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  padding-bottom: 5rem;
+}
+#skills .skill-contents {
+  margin-top: 1rem;
+}
+#skills .skill-contents .progress-skill {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#skills .skill-contents .progress-skill div {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #050d18;
+}
+#skills .skill-contents .progress-skill div .val {
+  float: right;
+}
+#skills .skill-contents .progress-skill .progress {
+  margin-top: 1rem;
+  background-color: #dce8f8;
+  border-radius: 0.1rem;
+}
+#skills .skill-contents .progress-skill .progress .progress-bar {
+  background-color: #149DDD;
+}
+
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+#resume {
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+#resume .resume-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #050d18;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+#resume .resume-item {
+  border-left: #1f5297 solid 0.2rem;
+  padding-left: 2rem;
+  padding-bottom: 0.1rem;
+  font-size: 1.6rem;
+}
+#resume .resume-item h4 {
+  padding-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 650;
+}
+#resume .resume-item p em {
+  font-style: italic;
+  color: #272829;
+}
+#resume .resume-item p {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+#resume .resume-item ul {
+  margin: 1em 0 1em 0;
+  padding-left: 2rem;
+}
+#resume .resume-item ul li {
+  list-style-type: disc;
+  margin: 1rem 0 1rem 0;
+}
+#resume .resume-item h5 {
+  background-color: #e4edf9;
+  padding: 0.5rem 1.5rem;
+  display: inline-block;
+  font-weight: 650;
+}
+#resume .resume-item:before {
+  content: "";
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  border: #1f5297 solid 0.2rem;
+  background-color: #FFFFFF;
+  left: 0.75rem;
+  position: absolute;
+}
+#resume .resume-item:last-child {
+  margin-bottom: 0;
 }
 
 /*--------------------------------------------------------------
