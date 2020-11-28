@@ -338,6 +338,198 @@ header .nav li:hover a i {
 }
 
 /*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+#fortfolio {
+  background-color: #f5f8fd;
+  margin: 3rem 0 3rem 0;
+}
+#fortfolio .filter-container {
+  justify-content: center;
+  display: flex;
+  margin: 3rem 0;
+}
+#fortfolio .filter-container #portfolio-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+  padding: 0.2rem 1.5rem;
+  border-radius: 50px;
+  background-color: #FFFFFF;
+  flex-basis: auto;
+}
+#fortfolio .filter-container #portfolio-filter li {
+  width: 5rem;
+  display: list-item;
+  font-size: 1.6rem;
+  margin: 0.4rem 0.8rem;
+  padding: 0.5rem 0;
+  text-align: center;
+  font-weight: 600;
+  color: #272829;
+  line-height: 2.5rem;
+}
+#fortfolio .filter-container #portfolio-filter li:hover {
+  color: #149ddd;
+}
+#fortfolio .portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+}
+#fortfolio .portfolio-container .items {
+  min-width: 34rem;
+  max-width: 34rem;
+  max-height: 27rem;
+  min-height: 27rem;
+  z-index: 1;
+  position: relative;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+#fortfolio .portfolio-container .items:before {
+  position: absolute;
+  content: "";
+  background-color: rgba(255, 255, 255, 0.5);
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+#fortfolio .portfolio-container .items .portfolio-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#fortfolio .portfolio-container .items .portfolio-item img {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+#fortfolio .portfolio-container .items .portfolio-item .portfolio-links {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  position: absolute;
+  z-index: 2;
+}
+#fortfolio .portfolio-container .items .portfolio-item .portfolio-links a {
+  width: 50%;
+  height: 100%;
+  background-color: rgba(20, 157, 221, 0.75);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+#fortfolio .portfolio-container .items .portfolio-item .portfolio-links a i {
+  font-size: 2.8rem;
+}
+#fortfolio .portfolio-container .items .portfolio-item .portfolio-links a:hover {
+  background-color: rgba(20, 157, 221, 0.95);
+}
+
+/*--------------------------------------------------------------
+# Service
+--------------------------------------------------------------*/
+#service-content {
+  margin: 3rem 0;
+}
+#service-content .service-element .icon {
+  float: left;
+  color: #ffffff;
+  font-size: 2.4rem;
+  width: 5.4rem;
+  height: 5.4rem;
+  background-color: #149ddd;
+  border: 0.1rem solid #149ddd;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 50%;
+}
+#service-content .service-element .icon:hover {
+  color: #149ddd;
+  background-color: #ffffff;
+}
+#service-content .service-element h2 {
+  display: inline-block;
+  margin-left: 2.2rem;
+  margin-bottom: 1rem;
+}
+#service-content .service-element h2 a {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #343a40;
+  text-decoration: none;
+  float: right;
+}
+#service-content .service-element h2 a:hover {
+  color: #149ddd;
+}
+#service-content .service-element p {
+  margin-left: 7.8rem;
+  font-size: 1.4rem;
+  color: #343a40;
+}
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+#contact {
+  margin-top: 3rem;
+  background-color: #f5f8fd;
+  padding-bottom: 3rem;
+}
+#contact .contact-left {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 3rem;
+}
+#contact .contact-left .left-item {
+  margin: 2rem 0;
+}
+#contact .contact-left .left-item .icon {
+  height: 4.4rem;
+  width: 4.4rem;
+  background-color: #dff3fc;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  float: left;
+}
+#contact .contact-left .left-item .icon i {
+  color: #149ddd;
+  font-size: 2rem;
+}
+#contact .contact-left .left-item h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-left: 6.5rem;
+  color: #050d18;
+}
+#contact .contact-left .left-item p {
+  margin-left: 6.5rem;
+  color: #173b6c;
+  font-size: 1.4rem;
+}
+#contact .contact-right {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 3rem;
+}
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 footer {
